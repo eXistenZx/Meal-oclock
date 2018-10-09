@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css?family=Miriam+Libre:400,700');
+
+
+/* On crée un espacement pour gérer le menu fixe */
+body {
+  margin-top: 13em;
+  font-family: "Miriam Libre";
+  background-color: #FAFAFA;
+}
+
+/* Menu de navigation */
+.navbar::before {
+  content: " ";
+  background: linear-gradient( to right, #f1484B, #ED764B );
+  width: 100%;
+  height: 1em;
+}
+
+.navbar {
+  background-color: #FFF;
+}
+
+.box {
+  border: 1px solid #CCC;
+  border-right: none;
+  flex-grow: 1;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.box:last-child {
+  border: 1px solid #CCC;
+}
+
+.can-hover:hover, .subnav .box:hover {
+  background-color: #F0F0F0;
+  color: #ED764B;
+  cursor: pointer;
+}
+
+.box-search input {
+  border:none;
+  height: 100%;
+  outline: none;
+}
+
+.subnav .box {
+  border-top: none;
+}
+
+.community {
+  background-color: #eaeaea;
+  margin-top: 3em;
+  padding: 2em
+}
+
+.area {
+  box-shadow: 0 0 15px #ccc;
+  background: white;
+  padding: 20px;
+}
+.area h3 {
+  border-bottom: 3px solid #ED764B;
+}
+
+.btn-primary {
+  background: linear-gradient( 45deg, #f1484B, #ED764B );
+  border:none;
+}
+.btn-primary:hover {
+  background:#f1484B;
+  border:none;
+}
+
+#searchResults {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+}
+
+.form-control {
+  border-radius: 0;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  background: transparent;
+  box-shadow: none;
+  outline: none;
+}
+.form-control:focus {
+  outline: none;
+  box-shadow: none;
+  border-color: #ED764B;
+}
+
+footer {
+  padding: 0;
+  padding-top: 20px;
+  margin-top: 4em;
+  border-top: 1px solid #ccc;
+  bottom: 0;
+  width: 100%;
+  background: white;
+}
+
+#eventMap, #eventListMap {
+  width:100%;
+  height: 300px;
+}
